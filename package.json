@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "server:dev": "cd server && npm run dev",
-    "build:server": "cd server && npm run build",
+    "server:dev": "cd backend && npm run dev",
+    "build:server": "cd backend && npm run build",
     "build:all": "npm run build:server && npm run build"
   },
   "dependencies": {

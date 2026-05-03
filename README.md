@@ -15,8 +15,8 @@ A Next.js + Express + Tailwind v4 project template with DataTable components, th
 # Install root dependencies
 npm install
 
-# Install server dependencies
-cd server && npm install && cd ..
+# Install backend dependencies
+cd backend && npm install && cd ..
 ```
 
 ### Development
@@ -55,7 +55,7 @@ The Next.js app will be available at `http://localhost:3000` and the Express ser
 │   │       └── data-table-column-header.tsx
 │   └── lib/
 │       └── utils.ts             # cn helper
-├── server/                      # Express + TypeScript backend
+├── backend/                     # Express + TypeScript backend
 │   ├── src/
 │   │   └── index.ts             # Express bootstrap + auth endpoints
 │   ├── package.json
@@ -140,7 +140,7 @@ Express server includes:
 
 ### Environment Variables
 
-Create a `.env` file in the `server/` directory:
+Create a `.env` file in the `backend/` directory:
 
 ```env
 PORT=4000
@@ -188,7 +188,7 @@ The `components.json` file follows shadcn/ui conventions:
 - **UI primitives**: `src/components/ui`
 - **DataTable**: `src/components/tables`
 - **Utils**: `src/lib/utils.ts`
-- **Server entry**: `server/src/index.ts`
+- **Server entry**: `backend/src/index.ts`
 
 ## 🎨 Customizing Themes
 
@@ -253,7 +253,7 @@ npm run start
 Build and run:
 
 ```bash
-cd server
+cd backend
 npm run build
 npm run start
 ```

@@ -36,5 +36,5 @@ yarn-error.log*
 next-env.d.ts
 
 # server
-/server/dist
-/server/node_modules
+/backend/dist
+/backend/node_modules
